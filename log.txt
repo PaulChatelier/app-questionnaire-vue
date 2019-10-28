@@ -1,0 +1,24 @@
+[Mon, 28 Oct 2019 17:47:47 GMT] [warning] [<0.000.0>] port must be an integer.
+[Mon, 28 Oct 2019 17:47:47 GMT] [info] [<0.000.0>] pouchdb-server has started on http://127.0.0.1:5984/
+[Mon, 28 Oct 2019 17:47:47 GMT] [info] [<0.000.0>] navigate to http://127.0.0.1:5984/_utils for the Fauxton UI.
+[Mon, 28 Oct 2019 17:47:55 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 200
+[Mon, 28 Oct 2019 17:48:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils 301
+[Mon, 28 Oct 2019 17:48:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/ 200
+[Mon, 28 Oct 2019 17:48:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/css/styles-a9623008fc27e79da2388441deeacfab.css 200
+[Mon, 28 Oct 2019 17:48:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/js/bundle-34997e32896293a1fa5d71f79eb1b4f7.js 200
+[Mon, 28 Oct 2019 17:48:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 200
+[Mon, 28 Oct 2019 17:48:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_session 304
+[Mon, 28 Oct 2019 17:48:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET / 304
+[Mon, 28 Oct 2019 17:48:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-site.png 200
+[Mon, 28 Oct 2019 17:48:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?_=1572284889273 200
+[Mon, 28 Oct 2019 17:48:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fauxtonicon5.woff 200
+[Mon, 28 Oct 2019 17:48:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_all_dbs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1572284889274 200
+[Mon, 28 Oct 2019 17:48:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_replicator?_=1572284889275 200
+[Mon, 28 Oct 2019 17:48:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_users?_=1572284889276 200
+[Mon, 28 Oct 2019 17:48:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/fonts/fontawesome-webfont.woff 200
+[Mon, 28 Oct 2019 17:48:09 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/pouchdb-favicon.png 200
+[Mon, 28 Oct 2019 17:48:27 GMT] [info] [<0.000.0>] 127.0.0.1 - - PUT /questionnaire 201
+[Mon, 28 Oct 2019 17:48:27 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /questionnaire/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true&limit=501 200
+[Mon, 28 Oct 2019 17:48:27 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /questionnaire/_all_docs?limit=21 200
+[Mon, 28 Oct 2019 17:48:28 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /questionnaire/_all_docs?startkey=%22%22&endkey=%22%E9%A6%99%22&limit=30&_=1572284889277 200
+[Mon, 28 Oct 2019 17:48:28 GMT] [info] [<0.000.0>] 127.0.0.1 - - GET /_utils/dashboard.assets/img/couch-watermark.png 200

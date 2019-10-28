@@ -32,21 +32,25 @@
             shaped
           ></v-text-field>
           <div class="text-center">
-            <v-btn color="#35bfb9" to="/questionnaire">Commencer le test</v-btn>
+            <v-btn color="#35bfb9" to="/questionnaire" >Commencer le test</v-btn>
           </div>
         </v-col>
       </v-row>
     </v-container>
   </v-form>
 </template>
-
 <script>
+import PouchDB from 'pouchdb'
 export default {
-  name: 'login'
+  name: 'login',
+  methods: {
+
+  }
 }
 
+var db = new PouchDB('questionnaire')
+db.put()
 </script>
-
 <style>
 
 </style>
