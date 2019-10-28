@@ -1,0 +1,84 @@
+{
+    "question": [
+        {
+            "texte": "Votre médecin vous prescrit des cachets à prendre toutes les demi-heures. Il vous en donne 3. Durant combien de temps prendrez-vous avec ces 3 cachets ?",
+            "reponse": [
+                { "reponse_1":"oui" },
+                { "reponse_1":"non" },
+                { "reponse_1":"peut-être" }
+            ]
+        },
+        {
+            "texte": "Un esquimau possède 23 chiens de traîneau. Avant une expédition, une maladie les suprend, et tous meurent sauf 7. Combien en reste-il à l'esquimau pour tirer le traîneau ?",
+            "reponse": [
+                { "reponse_1":"oui" },
+                { "reponse_1":"non" },
+                { "reponse_1":"peut-être" }
+            ]
+        },
+        {
+            "texte": "Combien d'animaux de chaque sexe Moïse emmena t-il sur son arche ?",
+            "reponse": [
+                { "reponse_1":"oui" },
+                { "reponse_1":"non" },
+                { "reponse_1":"peut-être" }
+            ]
+        },
+        {
+            "texte": "Combien d'animaux arrivent à manger avec leur queue ?",
+            "reponse": [
+                { "reponse_1":"oui" },
+                { "reponse_1":"non" },
+                { "reponse_1":"peut-être" }
+            ]
+        },
+        {
+            "texte": "Combien de jours d'anniversaires a une personne qui a vécu 50 ans ?",
+            "reponse": [
+                { "reponse_1":"oui" },
+                { "reponse_1":"non" },
+                { "reponse_1":"peut-être" }
+            ]
+        },
+        {
+            "texte": "Combien y a t-il de sept (7) entre 0 et 100 ?",
+            "reponse": [
+                { "reponse_1":"oui" },
+                { "reponse_1":"non" },
+                { "reponse_1":"peut-être" }
+            ]
+        },
+        {
+            "texte": "Un homme peut-il se marier avec la soeur de sa veuve ?",
+            "reponse": [
+                { "reponse_1":"oui" },
+                { "reponse_1":"non" },
+                { "reponse_1":"peut-être" }
+            ]
+        },
+        {
+            "texte": "Je divise 40 par un demi (1/2), je multiplie le tout par 2, et j'enlève 60. Combien me reste-t-il ?",
+            "reponse": [
+                { "reponse_1":"oui" },
+                { "reponse_1":"non" },
+                { "reponse_1":"peut-être" }
+            ]
+        },
+        {
+            "texte": "Certains mois de l'année comptent 31 jours. Combien en ont 28 ?",
+            "reponse": [
+                { "reponse_1":"oui" },
+                { "reponse_1":"non" },
+                { "reponse_1":"peut-être" }
+            ]
+        },
+        {
+            "texte": "Il y a 10 prunes. Vous en prenez 4. Combien en avez-vous ?",
+            "reponse": [
+                { "reponse_1":"oui" },
+                { "reponse_1":"non" },
+                { "reponse_1":"peut-être" }
+            ]
+        }
+    ]
+  }
