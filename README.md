@@ -27,3 +27,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+
+28/10/2019 : Après avoir effectué mon installation et mis en place mon environnement de développement, je m'atèle à la couche technique. 
+08 h 30 : Je commence la base de donnée, et configurer l'accès à ces données depuis le code 
