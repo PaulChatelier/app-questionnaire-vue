@@ -31,7 +31,7 @@
         >
           <v-card-text>
             {{question.texte}}
-              <v-checkbox v-for="reponse in question.reponse" :key="reponse.reponse" :label="reponse.reponse" height="0px"></v-checkbox>
+              <v-checkbox v-model="reponse.bool" v-for="reponse in question.reponse" :key="reponse.reponse" :label="reponse.reponse" height="0px"></v-checkbox>
           </v-card-text>
         </v-card>
 
@@ -74,10 +74,9 @@
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn
-            to="/"
             color="primary"
             text
-            @click="dialog = false"
+            @click="response_form()"
           >
             Oui
           </v-btn>
@@ -95,17 +94,65 @@
 <script>
 
 import json from '../questionnaire.json'
+import PouchDB from "pouchdb";
+const db = new PouchDB('questionnaire')
 
 export default {
-  name: 'login',
+  name: 'questionnaire',
   data () {
     return {
-      myJson: json,
-      e1: 1
+      myJson: JSON.parse(JSON.stringify(json)),
+      e1: 1,
+      dialog: false
     }
   },
-  mounted () {
+    mounted () {
     console.log(this.myJson)
+    },
+
+    methods: {
+    response_form () {
+
+      this.dialog = false
+      const user_doc_id = this.$route.params.user_doc_id
+      
+      db.get(user_doc_id).then(user_doc => {
+
+        user_doc.questions = this.myJson.question
+
+        db.put(user_doc).then( () => {
+
+          let maxscore = 0
+          let score = 0
+
+          this.myJson.question.forEach(question => {
+
+            question.reponse.forEach(reponse => {
+
+              if(reponse.true_response) maxscore += 1
+
+              if(reponse.bool === reponse.true_response){
+
+                if(reponse.true_response === true) score += 1
+
+              }else{
+
+                score -= 1
+
+              }
+              
+            });
+
+          });
+
+          alert("Votre score est : " + score/maxscore*20 + "/20")
+          this.$router.push('/')
+        })
+
+      })
+
+    }
+
   }
 }
 

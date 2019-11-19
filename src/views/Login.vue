@@ -16,23 +16,26 @@
           <v-text-field
             v-model="first"
             label="Prenom"
+            :rules="[rules.required, rules.counter]"
             outlined
             shaped
           ></v-text-field>
           <v-text-field
             v-model="last"
             label="Nom"
+            :rules="[rules.required, rules.counter]"
             filled
             shaped
           ></v-text-field>
           <v-text-field
-            v-model="last"
+            v-model="firm"
             label="Entreprise"
+            :rules="[rules.required, rules.counter]"
             filled
             shaped
           ></v-text-field>
           <div class="text-center">
-            <v-btn color="#35bfb9" to="/questionnaire" >Commencer le test</v-btn>
+            <v-btn color="#35bfb9" @click="validate" >Commencer le test</v-btn>
           </div>
         </v-col>
       </v-row>
@@ -40,17 +43,38 @@
   </v-form>
 </template>
 <script>
-import PouchDB from 'pouchdb'
-export default {
-  name: 'login',
-  methods: {
+  import PouchDB from "pouchdb";
+  const db = new PouchDB('questionnaire')
 
+ export default {
+  name: 'login',
+  data(){
+    return {
+      first: "",
+      last: "",
+      firm: "",
+      rules: {
+          required: value => !!value || 'Champ Requis.',
+          counter: value => value.length <= 50 || 'Max 20 characters',
+      },
+    }
+  },
+  methods: {
+    validate () {
+      // if (this.$refs.form.validate()) {
+        // this.snackbar = true
+        // var id = uuid()
+
+        db.post({
+          firstname: this.first,
+          lastname: this.last,
+          company: this.firm
+        }).then((doc) => {
+          console.warn(doc)
+          this.$router.push("/questionnaire/" + doc.id)
+        })
+      // }
+    }
   }
 }
-
-var db = new PouchDB('questionnaire')
-db.put()
 </script>
-<style>
-
-</style>

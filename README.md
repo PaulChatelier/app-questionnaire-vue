@@ -3,3 +3,5 @@
 13 h 00 : Mise en place de la page d'identification et gestion de l'import json dans le questionnaire
 18 h 45 : Fin de la navigation des pages et de la mise en place de la page d'auth, j'ai également fais une page pour l'ajout d'un questionnaire. Mise en place de pouchdb
 A venir : PouchDB 
+
+Déployer [là](https://PaulChatelier.github.io)

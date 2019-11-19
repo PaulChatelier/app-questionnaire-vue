@@ -3,81 +3,171 @@
         {
             "texte": "Votre médecin vous prescrit des cachets à prendre toutes les demi-heures. Il vous en donne 3. Durant combien de temps prendrez-vous avec ces 3 cachets ?",
             "reponse": [
-                { "reponse":"oui" },
-                { "reponse":"non" },
-                { "reponse":"peut-être" }
+                {   "reponse":"1h30",
+                    "bool": false,
+                    "true_response": true
+                },
+                {   "reponse":"1h20",
+                    "bool": false,
+                    "true_response":false
+                },
+                {   "reponse":"2h00",
+                    "bool": false,
+                    "true_response": false
+                }
             ]
         },
         {
             "texte": "Un esquimau possède 23 chiens de traîneau. Avant une expédition, une maladie les suprend, et tous meurent sauf 7. Combien en reste-il à l'esquimau pour tirer le traîneau ?",
             "reponse": [
-                { "reponse":"chatte" },
-                { "reponse":"non" },
-                { "reponse":"peut-être" }
+                {   "reponse":"16",
+                    "bool": false,
+                    "true_response":true
+                },
+                {   "reponse":"12",
+                    "bool":false,
+                    "true_response": false    
+                },
+                {   "reponse":"15",
+                    "bool":false,
+                    "true_response": false   
+                }
             ]
         },
         {
             "texte": "Combien d'animaux de chaque sexe Moïse emmena t-il sur son arche ?",
             "reponse": [
-                { "reponse":"oui" },
-                { "reponse":"non" },
-                { "reponse":"peut-être" }
+                {   "reponse":"0",
+                    "bool": false,
+                    "true_response":false
+                },
+                {   "reponse":"4000",
+                    "bool":false,
+                    "true_response": true    
+                },
+                {   "reponse":"12 000 000",
+                    "bool":false,
+                    "true_response": false   
+                }
             ]
         },
         {
             "texte": "Combien d'animaux arrivent à manger avec leur queue ?",
             "reponse": [
-                { "reponse":"oui" },
-                { "reponse":"non" },
-                { "reponse":"peut-être" }
+                {   "reponse":"12",
+                    "bool": false,
+                    "true_response":false
+                },
+                {   "reponse":"0",
+                    "bool":false,
+                    "true_response": true    
+                },
+                {   "reponse":"oui !",
+                    "bool":false,
+                    "true_response": true   
+                }
             ]
         },
         {
             "texte": "Combien de jours d'anniversaires a une personne qui a vécu 50 ans ?",
             "reponse": [
-                { "reponse":"oui" },
-                { "reponse":"non" },
-                { "reponse":"peut-être" }
+                {   "reponse":"12",
+                    "bool": false,
+                    "true_response":false
+                },
+                {   "reponse":"49",
+                    "bool":false,
+                    "true_response": false    
+                },
+                {   "reponse":"50",
+                    "bool":false,
+                    "true_response": true   
+                }
             ]
         },
         {
             "texte": "Combien y a t-il de sept (7) entre 0 et 100 ?",
             "reponse": [
-                { "reponse":"oui" },
-                { "reponse":"non" },
-                { "reponse":"peut-être" }
+                {   "reponse":"oui",
+                    "bool": false,
+                    "true_response":true
+                },
+                {   "reponse":"non",
+                    "bool":false,
+                    "true_response": false    
+                },
+                {   "reponse":"peut-être",
+                    "bool":false,
+                    "true_response": false   
+                }
             ]
         },
         {
             "texte": "Un homme peut-il se marier avec la soeur de sa veuve ?",
             "reponse": [
-                { "reponse":"oui" },
-                { "reponse":"non" },
-                { "reponse":"peut-être" }
+                {   "reponse":"oui",
+                    "bool": false,
+                    "true_response":true
+                },
+                {   "reponse":"non",
+                    "bool":false,
+                    "true_response": false    
+                },
+                {   "reponse":"INCESTE !",
+                    "bool":false,
+                    "true_response": true   
+                }
             ]
         },
         {
             "texte": "Je divise 40 par un demi (1/2), je multiplie le tout par 2, et j'enlève 60. Combien me reste-t-il ?",
             "reponse": [
-                { "reponse":"oui" },
-                { "reponse":"non" },
-                { "reponse":"peut-être" }
+                {   "reponse":"40",
+                    "bool": false,
+                    "true_response": false
+                },
+                {   "reponse":"0",
+                    "bool":false,
+                    "true_response": false    
+                },
+                {   "reponse":"- 20",
+                    "bool":false,
+                    "true_response": true   
+                }
             ]
         },
         {
             "texte": "Certains mois de l'année comptent 31 jours. Combien en ont 28 ?",
             "reponse": [
-                { "reponse":"oui" },
-                { "reponse":"non" },
-                { "reponse":"peut-être" }
+                {   "reponse":"1",
+                    "bool": false,
+                    "true_response":true
+                },
+                {   "reponse":"2",
+                    "bool":false,
+                    "true_response": false    
+                },
+                {   "reponse":"3",
+                    "bool":false,
+                    "true_response": false   
+                }
             ]
         },
         {
             "texte": "Il y a 10 prunes. Vous en prenez 4. Combien en avez-vous ?",
             "reponse": [
-                { "reponse":"oui" },
-                { "reponse":"non" },
-                { "reponse":"peut-être" }
+                {   "reponse":"7",
+                    "bool": false,
+                    "true_response":true
+                },
+                {   "reponse":"12",
+                    "bool":false,
+                    "true_response": false    
+                },
+                {   "reponse":"4",
+                    "bool":false,
+                    "true_response": false   
+                }
             ]
         }
     ]

@@ -11,7 +11,7 @@ const routes = [
     component: Login
   },
   {
-    path: '/questionnaire',
+    path: '/questionnaire/:user_doc_id',
     name: 'questionnaire',
     component: () => import('@/views/Questionnaire.vue')
   },
