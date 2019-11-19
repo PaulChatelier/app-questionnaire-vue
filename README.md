@@ -4,4 +4,14 @@
 18 h 45 : Fin de la navigation des pages et de la mise en place de la page d'auth, j'ai également fais une page pour l'ajout d'un questionnaire. Mise en place de pouchdb
 A venir : PouchDB 
 
+19/11/2019 : Mise en place de PouchDB et enregistrement de saisie user en BDD (Aide d'Antoine Burgaudeau et de Romain Boudot)
+13h00 : Lancement PouchDB et enregistrement de l'utilisateur en BDD
+14h30 : Passage de l'id user dans URL
+15h00 : Fonction d'enregistrement des résultats du questionnaire pour un utilisateur dans la BDD
+16h00 : Dernières vérifications du bon fonctionnement et sortie d'un résultat pour l'utilisateur
+17h00 : Création d'un livrable déployer sur github
+21h00 : Commentaires du codes et indentation
+21h30 : Envoie rendu Final
+
+
 Déployer [là](https://PaulChatelier.github.io)

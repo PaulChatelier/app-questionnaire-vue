@@ -1,41 +1,45 @@
 <template>
-<v-form>
+  <v-form>
     <v-container>
-  <v-row align="center" justify="center">
-    <v-img
-      src="https://www.leptidigital.fr/wp-content/uploads/2016/09/outils-questionnaire-en-ligne.jpg"
-      aspect-ratio="1"
-      class="grey lighten-2"
-      max-width="500"
-      max-height="300"
-      style="margin-bottom : 15px;"
-    ></v-img>
-  </v-row>
+      <v-row align="center" justify="center">
+        <v-img
+          src="https://www.aplicit.com/wp-content/uploads/2015/11/ImageQuestionnaireblanc2.jpg"
+          aspect-ratio="1"
+          class="grey lighten-2"
+          max-width="300"
+          max-height="-300"
+          style="margin-bottom : 15px;"
+        ></v-img>
+      </v-row>
       <v-row justify="center">
         <v-col :cols="12" lg="6" sm="6">
+          <!-- Champ Prénom -->
           <v-text-field
-            v-model="first"
+            v-model="pc_first"
             label="Prenom"
             :rules="[rules.required, rules.counter]"
             outlined
             shaped
           ></v-text-field>
+          <!-- Champ Nom -->
           <v-text-field
-            v-model="last"
+            v-model="pc_last"
             label="Nom"
             :rules="[rules.required, rules.counter]"
             filled
             shaped
           ></v-text-field>
+          <!-- Champ Entreprise -->
           <v-text-field
-            v-model="firm"
+            v-model="pc_firm"
             label="Entreprise"
             :rules="[rules.required, rules.counter]"
             filled
             shaped
           ></v-text-field>
+          <!-- Bouton pour validation et événement pc_validate -->
           <div class="text-center">
-            <v-btn color="#35bfb9" @click="validate" >Commencer le test</v-btn>
+            <v-btn color="#35bfb9" @click="pc_validate">Commencer le test</v-btn>
           </div>
         </v-col>
       </v-row>
@@ -43,38 +47,37 @@
   </v-form>
 </template>
 <script>
-  import PouchDB from "pouchdb";
-  const db = new PouchDB('questionnaire')
+// import et const permettant le lancement de PouchDB et son constructeur
+import PouchDB from "pouchdb";
+const db = new PouchDB("questionnaire");
 
- export default {
-  name: 'login',
-  data(){
+export default {
+  name: "login",
+  data() {
     return {
-      first: "",
-      last: "",
-      firm: "",
+      // Récupération du content des champs remplis par l'utilisateur
+      pc_first: "",
+      pc_last: "",
+      pc_firm: "",
+      // Permet d'afficher le champs en rouge si aucunes informations saisies
       rules: {
-          required: value => !!value || 'Champ Requis.',
-          counter: value => value.length <= 50 || 'Max 20 characters',
-      },
-    }
+        required: value => !!value || "Champ Requis.",
+        counter: value => value.length <= 50 || "Max 20 characters"
+      }
+    };
   },
   methods: {
-    validate () {
-      // if (this.$refs.form.validate()) {
-        // this.snackbar = true
-        // var id = uuid()
-
-        db.post({
-          firstname: this.first,
-          lastname: this.last,
-          company: this.firm
-        }).then((doc) => {
-          console.warn(doc)
-          this.$router.push("/questionnaire/" + doc.id)
-        })
-      // }
+    // Fonction Validation permettant l'envoie des données à PouchDB
+    pc_validate() {
+      db.post({
+        pc_firstname: this.pc_first,
+        pc_lastname: this.pc_last,
+        pc_company: this.pc_firm
+      }).then(doc => {
+        console.warn(doc);
+        this.$router.push("/questionnaire/" + doc.id);
+      });
     }
   }
-}
+};
 </script>
